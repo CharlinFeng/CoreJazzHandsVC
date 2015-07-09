@@ -39,7 +39,7 @@
         handView = self.blueView;
     }
 
-    [self jazzHands_frameHand:handView animType:JazzHandsAnimTypeFrame kfmArrayBlock:^NSArray *(IFTTTAnimation *animatiom) {
+    [self jazzHands_frameHand:handView animType:JazzHandsAnimTypeFrame constraint:nil kfmArrayBlock:^NSArray *(IFTTTAnimation *animatiom) {
         return @[
               JazzHandsKFV(0, [NSValue valueWithCGRect:handView.frame]),
               JazzHandsKFV(320, NSValueFromRect(CGRectMake(520, 300, 100, 100))),
@@ -65,7 +65,7 @@
     
 
     
-    [self jazzHands_frameHand:handView animType:JazzHandsAnimTypeCornerRadius kfmArrayBlock:^NSArray *(IFTTTAnimation *animatiom) {
+    [self jazzHands_frameHand:handView animType:JazzHandsAnimTypeCornerRadius constraint:nil kfmArrayBlock:^NSArray *(IFTTTAnimation *animatiom) {
         return @[
                                   JazzHandsKFV(0, @(0)),
                                   JazzHandsKFV(320, @(50))

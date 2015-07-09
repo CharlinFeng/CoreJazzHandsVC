@@ -63,6 +63,6 @@ typedef enum {
 
 
 
--(void)jazzHands_frameHand:(UIView *)animatedView animType:(JazzHandsAnimType)animType kfmArrayBlock:(NSArray *(^)(IFTTTAnimation *animatiom))kfmArrayBlock;
+-(void)jazzHands_frameHand:(UIView *)animatedView animType:(JazzHandsAnimType)animType constraint:(NSLayoutConstraint *)constraint kfmArrayBlock:(NSArray *(^)(IFTTTAnimation *animatiom))kfmArrayBlock;
 
 @end

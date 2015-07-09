@@ -19,7 +19,7 @@
  *
  *  @return 对象实例
  */
-+(instancetype)kfm:(NSUInteger)time value:(id)value{
++(instancetype)kfm:(NSInteger)time value:(id)value{
     
     JHKeyFrameModel *kfm = [[JHKeyFrameModel alloc] init];
      

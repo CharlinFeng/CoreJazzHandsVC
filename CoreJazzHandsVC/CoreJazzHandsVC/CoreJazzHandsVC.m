@@ -36,10 +36,12 @@
 
 
 
--(void)jazzHands_frameHand:(UIView *)animatedView animType:(JazzHandsAnimType)animType kfmArrayBlock:(NSArray *(^)(IFTTTAnimation *animatiom))kfmArrayBlock{
+-(void)jazzHands_frameHand:(UIView *)animatedView animType:(JazzHandsAnimType)animType constraint:(NSLayoutConstraint *)constraint kfmArrayBlock:(NSArray *(^)(IFTTTAnimation *animatiom))kfmArrayBlock{
     
     //创建动画对象
     IFTTTAnimation *animation = [self animationWithAnimType:animType animatedView:animatedView];
+    
+    animation.constraint = constraint;
     
     if(kfmArrayBlock == nil){
         
